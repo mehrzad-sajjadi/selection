@@ -10,10 +10,10 @@
     ></Option>
     <Option
       :arrays="keshvarha"
-      keyName="iddd"
+      keyName="id"
       titleName="name"
       :place="places[1]"
-      @send="getCity"
+      @send:data="getCity"
     ></Option>
 
     <Option
@@ -44,12 +44,12 @@ for (let i = 0; i < continents.length; i++) {
 }
 
 let countries = reactive([
-  { iddd: 1, name: "Iran", continent_id: 1 },
-  { iddd: 2, name: "Canada", continent_id: 2 },
-  { iddd: 3, name: "USA", continent_id: 2 },
-  { iddd: 4, name: "Germany", continent_id: 3 },
-  { iddd: 5, name: "France", continent_id: 3 },
-  { iddd: 6, name: "Malaysia", continent_id: 1 },
+  { id: 1, name: "Iran", continent_id: 1 },
+  { id: 2, name: "Canada", continent_id: 2 },
+  { id: 3, name: "USA", continent_id: 2 },
+  { id: 4, name: "Germany", continent_id: 3 },
+  { id: 5, name: "France", continent_id: 3 },
+  { id: 6, name: "Malaysia", continent_id: 1 },
 ]);
 let cities = reactive([
   { id: 1, name: "Tehran", c_id: 1 },
